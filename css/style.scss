@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body{
+    position: relative;
+    background: radial-gradient(#1E2140,#262A57);
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav{
+    height: 3.5rem;
+    background-color: #151932;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35vw;
+    position:absolute;
+    top: 15%;
+    padding: 0px 20px;
+    border-radius:2rem;
+}
+
+.pomodoro,.short-break,.long-break{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    padding: 0px 15px;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background: #151932;
+    color: #D7E0FF;
+    border: none;
+    font-weight: 500;
+}
+
+.nav-active{
+    background-color: #F87070;
+    color: #151932;
+}
+
+.body h1{
+    position: absolute;
+    top: 5%;
+    color: #D7E0FF;
+}
+
+.main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5%;
+}
+
+svg{
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+
+svg circle{
+    height: 300px;
+    width:300px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #f74e4e;
+
+    stroke-linecap: round;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+}
+
+svg circle:nth-child(1){
+    stroke: rgb(22, 26, 59);
+    stroke-width: 10;
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+
+}
+
+svg circle:nth-child(2){
+    stroke-dasharray: 696;
+
+}
+
+
+.main-bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .main-bg .progress-bar {
+    position: relative;
+}
+
+.progress-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+ .main-bg .progress-bar .time{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.time{
+    font-size: 3.8rem;
+    color: #D7E0FF;
+    height: 90%;
+    width: 100%;
+    text-align: center;
+}
+
+.pause{
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    left: 3px;
+    font-size: 0.8rem;
+    background: #1E2141;
+    border: none;
+    color: #D7E0FF;
+    position: relative;
+    bottom: 100px;
+}
+
+.start{
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    left: 3px;
+    font-size: 0.8rem;
+    background: #1E2141;
+    border: none;
+    color: #D7E0FF;
+    position: relative;
+    bottom: 100px;
+}
+
+
+.settings{
+    position: absolute;
+    bottom: 10%;
+}
+
+.settings button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    color: #757A98;
+}
+
+
+.modal-bg{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s ,opacity 0.3s ;
+    background:rgba(40, 47, 90,0.9);
+}
+
+.bg-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal{
+    position: relative;
+    background: white;
+    height: 50vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8%;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 35px;
+    width: 25vw;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.5);;
+}
+
+.head h3{
+    font-weight: 900;
+}
+
+.head span{
+    color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+
+
+
+
+.time-setting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+}
+
+.modal h4{
+    position: absolute;
+    top:23%;
+    left: 8%;
+    font-weight:900;
+    color: rgba(0,0,0,0.9);
+}
+
+.pomodoro-time ,.short-break-time ,.long-break-time {
+    padding: 5px;
+    color: rgba(0,0,0,0.7);
+}
+
+.pomodoro-time input,.short-break-time input,.long-break-time input{
+    width: 110px;
+    border: none;
+    background: #d7ddee;
+    padding: 10px;
+    border-radius: 0.7rem;
+    outline: none;
+    font-weight: 900;
+}
+
+.pomodoro-time h5,.short-break-time h5,.long-break-time h5{
+    margin:5px 0px;
+}
+
+.modal button{
+    padding: 13px 50px;
+    position: relative;
+    top: 50%;
+    background: #F87070;
+    border: none;
+    border-radius: 1.3rem;
+    font-weight: 600;
+    font-size:1rem ;
+    cursor: pointer;
+    color: rgba(0,0,0,0.9);
+    transition: all 0.3s ease;
+}
+
+.apply:hover{
+    background: rgba(30, 33, 65,0.8);
+    color: #F87070;
+    font-size: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

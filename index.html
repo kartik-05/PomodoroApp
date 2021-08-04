@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PomodoroApp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div class="body">
+
+        <h1>pomodoro</h1>
+
+        <div class="nav">
+            <button type="submit" class="pomodoro">pomodoro</button>
+            <button type="submit" class="short-break">short break</button>
+            <button type="submit" class="long-break">long break</button>
+        </div>
+
+        <div class="main">
+
+            <div class="main-bg">
+                <div class="progress-bar">
+                    <svg>
+                        <circle cx="150" cy="150" r="120"></circle>
+                        <circle cx="150" cy="150" r="110" id="circle_2"></circle>
+                    </svg>
+
+
+                    <div class="time">
+                    
+                    </div>
+
+                    <button class="pause"></button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="settings">
+            <button><i class="fas fa-cog"></i></button>
+        </div>
+
+    </div>
+
+    <div class="modal-bg">
+        <div class="modal">
+            <div class="head">
+                <h3>S E T T I N G S</h3>
+                <span><i class="fas fa-times"></i></span>
+            </div>
+            <h4>T I M E ( M I N U T E S )</h4>
+
+            <div class="time-setting">
+                <div class="pomodoro-time">
+                    <h5>pomodoro</h5>
+                        <input type="number" value="25" class="pomodoro-input">
+                </div>
+                <div class="short-break-time">
+                    <h5>short break</h5>
+                        <input type="number" value="5" class="shortBreak-input">
+                </div>
+                <div class="long-break-time">
+                    <h5>long break</h5>
+                    <input type="number" value="15" class="longBreak-input">
+                </div>
+            </div>
+
+            <button class="apply">APPLY</button>
+        </div>
+    </div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
