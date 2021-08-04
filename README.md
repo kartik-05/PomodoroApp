@@ -5,12 +5,12 @@
 
 ## Screenshots
 
-![](Screenshots/screen1.PNG)
-![](Screenshots/screen2.PNG)
-![](Screenshots/screen3.PNG)
-![](Screenshots/screen4.PNG)
-![](Screenshots/screen5.PNG)
-![](Screenshots/screen6.PNG)
+![](screenshots/screen1.PNG)
+![](screenshots/screen2.PNG)
+![](screenshots/screen3.PNG)
+![](screenshots/screen4.PNG)
+![](screenshots/screen5.PNG)
+![](screenshots/screen6.PNG)
 
 
 ## Built With
