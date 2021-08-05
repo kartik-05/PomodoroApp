@@ -5,11 +5,17 @@
 
 ## Screenshots
 
+-> Pomodoro Timer
 ![](screenshots/screen1.PNG)
+-> Short Break Timer 
 ![](screenshots/screen2.PNG)
+-> Long Break Timer
 ![](screenshots/screen3.PNG)
+-> Modal for Setting timer
 ![](screenshots/screen4.PNG)
+-> Setting Changes
 ![](screenshots/screen5.PNG)
+-> Circular Progress bar
 ![](screenshots/screen6.PNG)
 
 
